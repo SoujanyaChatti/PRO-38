@@ -47,7 +47,7 @@ function setup() {
  
  
   //invisibleground to help mario not to fall.
-  invisibleGround = createSprite(100,330,400,10);
+  invisibleGround = createSprite(100,310,400,10);
  invisibleGround.visible = false;
   
  //creating groupos
@@ -69,7 +69,7 @@ function setup() {
   //mario and score
   score = 0;
   lives=3;
-  mario = createSprite(100,330,20,50);
+  mario = createSprite(100,310,20,50);
   mario.addAnimation("running", mario_running);
   mario.addAnimation("mario stopped",mariostop);
   mario.scale = 0.7;
@@ -98,7 +98,7 @@ function draw() {
  
  
 console.log(mouseY);
-  if(keyDown("space") && mario.y>=266) {
+  if(keyDown("space") && mario.y>=256) {
     mario.velocityY = -20;
     
   }
