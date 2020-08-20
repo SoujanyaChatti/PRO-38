@@ -98,7 +98,7 @@ function draw() {
  
  
 console.log(mouseY);
-  if(keyDown("space") && mario.y>=256) {
+  if(keyDown("space") && mario.y>=246) {
     mario.velocityY = -20;
     
   }
